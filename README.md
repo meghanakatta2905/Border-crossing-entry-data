@@ -1,19 +1,76 @@
+🚧 Border Crossing Data – Traffic Volume Prediction
 
-Using machine learning techniques, this project analyzes border crossing data to forecast traffic volumes. By leveraging Random Forest regression and geographic data, the project aims to enhance resource allocation and planning through insightful model predictions.
+This project uses machine learning to analyze and predict traffic volumes at U.S. border crossings. By applying Random Forest regression on public data, the goal is to support smarter resource planning and operational efficiency at entry points.
 
-Project Description
-The goal of this project is to predict border crossing volumes using a Random Forest regression model based on geographic and categorical data. The analysis provides valuable insights for optimizing resource allocation and operational planning at border crossings.
+⸻
 
-Data Source
-The data used in this project is publicly available and includes information on border crossing entries. The dataset contains features such as the port name, state, border, date, measure, value, and location coordinates.
+Objective
 
-Results
-The Random Forest regression model was trained and evaluated on the border crossing data.
-Key performance metrics include Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared score.
-Visualizations were generated to illustrate the predictions and insights derived from the model.
-Tools and Technologies
-Programming Languages: Python
-Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-Data Visualization: Matplotlib, Seaborn
-Machine Learning: Random Forest Regression
-Development Tools: Jupyter Notebook, Git
+To forecast border crossing volumes using geographic and categorical features such as port name, state, date, and measure. The project helps visualize trends and provide actionable insights for traffic management and planning.
+
+⸻
+
+📁 Dataset Overview
+
+Source: U.S. Customs and Border Protection (CBP) public datasets
+Features include:
+	•	Port Name
+	•	State
+	•	Border (North/South)
+	•	Date
+	•	Measure (e.g., Pedestrians, Vehicles, Containers)
+	•	Entry Value
+	•	Location Coordinates
+
+⸻
+
+🔍 Project Workflow
+
+📊 Data Preprocessing
+	•	Cleaned and filtered time series data
+	•	Encoded categorical features (e.g., border, measure)
+	•	Extracted date components (month, year) for seasonality analysis
+
+🧠 Modeling
+	•	Trained a Random Forest Regressor to predict traffic volume (entry count)
+	•	Evaluated performance using:
+	•	Mean Absolute Error (MAE)
+	•	Mean Squared Error (MSE)
+	•	R² Score
+
+📈 Visualizations
+	•	Time series plots of border traffic trends
+	•	Bar charts for port-level traffic volume
+	•	Residuals and prediction-vs-actual plots to assess model accuracy
+
+⸻
+
+✅ Results & Insights
+	•	The model captured seasonal and regional traffic patterns
+	•	High-traffic ports and peak months were clearly identified
+	•	Visualizations helped surface bottlenecks and outliers for deeper review
+
+⸻
+
+🧰 Tools & Technologies
+
+Programming:
+Python
+
+Libraries:
+pandas, numpy, scikit-learn, matplotlib, seaborn
+
+Modeling:
+Random Forest Regression
+
+Development Tools:
+Jupyter Notebook, Git, GitHub
+
+⸻
+
+💡 Future Work
+	•	Try time-series specific models (ARIMA, Prophet)
+	•	Add weather or holiday data for better seasonal forecasting
+	•	Deploy as a simple dashboard for live volume monitoring
+
+⸻
